@@ -1,0 +1,35 @@
+categories {
+  .wrapper {
+    transition: 0.2s linear;
+  }
+
+  .collapsed {
+    height: 0 !important;
+  }
+
+}
+.ion-text-center{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+ion-label{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.data-name{
+  left: 5px;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.data-value{
+  float: right;
+  padding-right: 30px;
+  display: inline-block;
+}
+
+.sectionData {
+  margin-top: 20px;
+}

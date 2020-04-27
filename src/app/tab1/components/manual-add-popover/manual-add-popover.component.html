@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">$$$</ion-label>
+    <ion-input type="number" [(ngModel)]="amount"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Category</ion-label>
+    <ion-select [(ngModel)]="category">
+      <ion-select-option value="Food">Food</ion-select-option>
+      <ion-select-option value="Rent/Mortgage">Rent/Mortgage</ion-select-option>
+      <ion-select-option value="Entertainment">Entertainment</ion-select-option>
+      <ion-select-option value="Transportation">Transportation</ion-select-option>
+      <ion-select-option value="Subscriptions">Subscriptions</ion-select-option>
+      <ion-select-option value="Utilities">Utilities</ion-select-option>
+      <ion-select-option value="Misc.">Misc.</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Extra Info.</ion-label>
+    <ion-textarea [(ngModel)]="extra"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-button slot="end" (click)="addExpense()">Add</ion-button>
+  </ion-item>
+</ion-content>

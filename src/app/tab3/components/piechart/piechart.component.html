@@ -1,0 +1,23 @@
+
+
+
+<ion-title size="large" class="ion-text-center">
+  <div class="center-align"> <ion-icon name="caret-back-outline" (click)="previousMonth()"></ion-icon>
+  {{givenMonth}}
+  <ion-icon name="caret-forward-outline" (click)="nextMonth()"></ion-icon></div>
+</ion-title>
+
+
+
+<div style="display: block;">
+  <canvas baseChart height="250px"
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [legend]="pieChartLegend"
+          [colors]="pieChartColors">
+  </canvas>
+</div>
+

@@ -1,0 +1,26 @@
+<div>
+  <canvas
+      baseChart
+      [chartType]="chartType"
+      [datasets]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="true"
+      [plugins]="lineChartPlugins"
+      height="180"
+      [colors]="background"
+  >
+  </canvas>
+</div>
+<br />
+<ion-title size="large">Overview: March 2020</ion-title>
+<br />
+<ion-card id="current-budget-overview">
+  <ion-card-header>
+    <ion-card-content>
+      <p><span class="bold">Budget:</span> {{ budget }}</p>
+      <p><span class="bold">Spent:</span> {{ expenses }}</p>
+      <p><span class="bold">Savings:</span><span class="bold" [ngStyle]="col"> {{ savings }}</span></p>
+    </ion-card-content>
+  </ion-card-header>
+</ion-card>

@@ -1,0 +1,62 @@
+{
+  "February2020": {
+    "Food": {
+      "Eating Out": 200,
+      "Groceries": 160
+    },
+    "Rent/Mortgage": {
+      "Rent": 800
+    },
+    "Entertainment": {
+      "Movies": 18.89,
+      "Other": 56.79
+    },
+    "Transportation": {
+      "Monthly Pass": 86.50,
+      "Uber": 80
+    },
+    "Subscriptions": {
+      "Netflix": 8.99,
+      "Amazon Prime": 12.99,
+      "Gym": 21.50,
+      "Other": 14.55
+    },
+    "Utilities": {
+      "Data Plan": 80,
+      "Other": 120
+    },
+    "Misc.": {
+      "Valentine's Day": 120,
+      "Other": 80
+    }
+  },
+  "March2020": {
+    "Food": {
+      "Eating Out": 100,
+      "Groceries": 180
+    },
+    "Rent/Mortgage": {
+      "Rent": 800
+    },
+    "Entertainment": {
+      "Movies": 21.45
+    },
+    "Transportation": {
+      "Monthly Pass": 86.50,
+      "Uber": 80
+    },
+    "Subscriptions": {
+      "Netflix": 8.99,
+      "Amazon Prime": 12.99,
+      "Gym": 21.50,
+      "Other": 14.55
+    },
+    "Utilities": {
+      "Data Plan": 80,
+      "Other": 120
+    },
+    "Misc.": {
+      "Other": 200
+    }
+  }
+}

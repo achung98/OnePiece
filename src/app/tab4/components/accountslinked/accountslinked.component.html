@@ -1,0 +1,49 @@
+<ion-toolbar id="accountslinked-toolbar">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-title size="large" class="ion-text-center">
+          Accounts Linked
+        </ion-title>
+      </ion-col>
+      <ion-col>
+        <ion-button class="ion-activatable ripple-parent">
+          <ion-icon name="create-outline"></ion-icon>
+          Edit Accounts
+        </ion-button>
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
+
+<ion-list
+  *ngFor="let section of sections; let i = index"
+  class="categories-accordion"
+  lines="none"
+  detail="false"
+  no-padding
+>
+  <ion-item
+    tappable
+    (click)="toogleSection(i)"
+    [ngClass]="{ 'section-active': section.open, section: !section.open }"
+  >
+    <ion-label>
+      {{ section.name }}
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end" *ngIf="!section.open"></ion-icon>
+    <ion-icon name="chevron-down-outline" slot="end" *ngIf="section.open"></ion-icon>
+  </ion-item>
+
+  <div *ngIf="section.open">
+    <div *ngFor="let data of sectionData[i]" class="accountslinked">
+      <ion-grid>
+        <ion-row>
+          <ion-col> {{ data.name }} </ion-col>
+          <ion-col class="accountNumber">{{ data.value }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-list>

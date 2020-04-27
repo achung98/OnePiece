@@ -1,0 +1,17 @@
+<div id="past-transactions">
+  <ngx-datatable
+    [rows]="trans"
+    [ngClass]="tableStyle"
+    [rowHeight]="'auto'"
+    [headerHeight]="50"
+    [columnMode]="'force'"
+    [footerHeight]="50"
+    [limit]="10"
+  >
+
+  <ngx-datatable-column name="Category"></ngx-datatable-column>
+  <ngx-datatable-column name="Subcategory"></ngx-datatable-column>
+  <ngx-datatable-column name="Amount"></ngx-datatable-column>
+
+  </ngx-datatable>
+</div>

@@ -1,0 +1,23 @@
+<ion-toolbar id="categories-toolbar">
+  <ion-title size="large" class="ion-text-center">
+    Categories
+  </ion-title>
+</ion-toolbar>
+
+<ion-list *ngFor="let section of sections; let i = index" class="categories-accordion" detail="false" no-padding>
+
+  <ion-item tappable (click)="toogleSection(i)" [ngClass]="{'section-active': section.open, 'section': !section.open}">
+    <ion-label>
+    {{ section.name }}
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end" *ngIf="!section.open"></ion-icon>
+    <ion-icon name="chevron-down-outline" slot="end" *ngIf="section.open"></ion-icon>
+  </ion-item>
+
+  <div *ngIf="section.open" class="sectionData">
+    <div *ngFor="let data of sectionData[i]">
+      <div class="data-name">{{ data.name }}</div>
+      <div class="data-value">{{ data.value }}$</div>
+    </div>
+  </div>
+</ion-list>

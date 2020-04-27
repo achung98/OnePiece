@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Configuration
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Configuration</ion-title>
+    </ion-toolbar> </ion-header
+  ><ion-button class="ion-activatable ripple-parent" id="editInfo">
+    <ion-icon name="pencil-outline"></ion-icon>
+  </ion-button>
+  <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  <ion-avatar>
+    <img
+      src="http://vignette4.wikia.nocookie.net/house/images/e/ef/House-karakter.jpg/revision/latest?cb=20100909011921&path-prefix=tr"
+    />
+  </ion-avatar>
+  <ion-text color="text">
+    <h2>Gregory House</h2>
+  </ion-text>
+  <ion-text color="danger">
+    <h2>Current Balance: $134.56</h2>
+  </ion-text>
+  <ion-text color="success">
+    <h2>Credit Score: 779</h2>
+  </ion-text>
+  <app-balance></app-balance>
+  <app-accountslinked></app-accountslinked>
+  <app-budgetplan></app-budgetplan>
+
+  <ion-button id="logout-btn" expand="block" color="danger">
+    <h1>Logout</h1>
+  </ion-button>
+</ion-content>

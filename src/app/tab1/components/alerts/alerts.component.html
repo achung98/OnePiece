@@ -1,0 +1,14 @@
+<ion-slides [options]="sliderConfig">
+  <ion-slide *ngFor="let tip of tips; let i = index">
+    <ion-card id="tips">
+      <ion-card-header>
+        <ion-card-title>
+         Tip #{{ i + 1 }}
+        </ion-card-title>
+        <ion-card-content>
+          {{ tip }}
+        </ion-card-content>
+      </ion-card-header>
+    </ion-card>
+  </ion-slide>
+</ion-slides>

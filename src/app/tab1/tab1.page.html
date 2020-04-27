@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-title size="large">
+      Saving Tips
+    </ion-title>
+  </ion-toolbar>
+
+  <app-alerts></app-alerts>
+
+  <ion-toolbar>
+    <ion-title size="large">
+      Budget
+    </ion-title>
+    <ion-icon name="add-circle" size="large" slot="end" tappable (click)="addExpense()"></ion-icon>
+  </ion-toolbar>
+
+  <app-budget></app-budget>
+</ion-content>
